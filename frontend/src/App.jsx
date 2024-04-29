@@ -1,12 +1,14 @@
 import React, { useState } from "react"
 import Header from "./components/Header"
+import UserInput from "./components/UserInput"
 
 export default function App() {
 
   return (
-    //TODO: Create Header, Chatbox, Chat hx
+    //TODO Chatbox, Chat hx
     <div>
       <Header />
+      <UserInput />
     </div>
   )
 }
