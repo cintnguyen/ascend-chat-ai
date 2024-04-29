@@ -1,11 +1,12 @@
-import React from "react"
-import {Button, Container} from "@nextui-org/button"
+import React, { useState } from "react"
+import Header from "./components/Header"
 
 export default function App() {
 
   return (
-    <Container>
-      <Button>Click</Button>
-    </Container>
+    //TODO: Create Header, Chatbox, Chat hx
+    <div>
+      <Header />
+    </div>
   )
 }
