@@ -14,8 +14,6 @@ export default function UserInput() {
         })
 
         const aiAnswer = await response.json()
-        console.log(aiAnswer)
-        console.log(aiAnswer.message)
 
         setValue("")
     }
