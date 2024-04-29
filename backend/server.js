@@ -86,20 +86,20 @@ app.get("/logout", (req, res) => {
 
 const openai = new OpenAI();
 
-async function talkToAi(text) {
+async function talkToAi(userPrompt) {
   const completion = await openai.chat.completions.create({
-    messages: [{ role: "system", content: `${text}` }],
+    messages: [{ role: "system", content: userPrompt }],
     model: "gpt-3.5-turbo",
   });
 
-  let resp = completion.choices[0].message.content
-  return resp
+  let aiResponse = completion.choices[0].message.content
+  return aiResponse
 }
 
-app.post("/api", isLoggedIn, async (req, res) => {
+app.post("/api", async (req, res) => {
   const text = req.body.text
-  const resp = await talkToAi(text)
-  res.json({message: resp})
+  const aiResp = await talkToAi(text)
+  res.json({message: aiResp})
 })
 
-app.listen(PORT, () => console.log("server running on port" + PORT))
+app.listen(PORT, () => console.log("server running on port: " + PORT))
