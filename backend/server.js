@@ -98,9 +98,7 @@ async function talkToAi(userPrompt) {
 
 app.post("/api", async (req, res) => {
   const text = req.body.text
-  console.log("Endpoint hit: ", text)
   const aiResp = await talkToAi(text)
-  console.log(aiResp)
   res.json({message: aiResp})
 })
 
