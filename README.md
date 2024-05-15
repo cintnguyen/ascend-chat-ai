@@ -9,7 +9,7 @@ AscendChatAI is an AI chatbot/ note taking app designed for future students matr
 - **Note Cards**: One of the best ways to learn is to ask questions! With every question the student asks, the app will create note cards displaying both question and answer in what we call a "note card" history.
 
 ## Preview
-![ResilientGpt-Cover](/frontend/src/assets/preview.png)
+![ResilientGpt-Cover](/frontend/src/assets/previewpage.png)
 
 ## Getting Started
 1. Clone the repository: `git clone https://github.com/cintnguyen/ascend-chat-ai.git`
